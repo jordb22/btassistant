@@ -1,5 +1,5 @@
+
 {
-    "token":"NDkxNDM1Njk0MDk1NDY2NDk4.DoK5BQ.n8Gd5uWjKdJVupkjnxQ6KSfW8mE",
     "owner": "335499682262286338",
     "prefix": "!"
 }
@@ -11,6 +11,7 @@ const bot = new Discord.Client({
     disableEveryone: true,
     disabledEvents: ['TYPING_START']
 });
+const token = 'NDkxNDM1Njk0MDk1NDY2NDk4.DoK5BQ.n8Gd5uWjKdJVupkjnxQ6KSfW8mE';
 
 bot.on("ready", () => {
     console.log(`Bot is online!\n${bot.users.size} users, in ${bot.guilds.size} servers connected.`);
