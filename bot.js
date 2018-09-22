@@ -2,13 +2,14 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 bot.on("ready", () => {
+    bot.user.setGame('v0.0.9')
     console.log(`Bot is online!\n${bot.users.size} users, in ${bot.guilds.size} servers connected.`);
 });
 
 bot.on("message", message => {
   if(message.content.indexOf('Tier 5 Egg') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Lv5Raid');
-    message.channel.send(`A Lv 5 Egg has appeared nearby ${role1}`);
+    let role1 = message.channel.guild.roles.find('name', 'Mewtwo');
+    message.channel.send(`A ${role1} Egg has appeared nearby and will be hatching soon!`);
   }
   else if(message.content.indexOf('Tier 4 Egg') > -1) {
     let role1 = message.channel.guild.roles.find('name', 'Lv4Raid');
