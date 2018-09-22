@@ -1,9 +1,5 @@
 const Discord = require('discord.js');
-const util = require('util');
-const bot = new Discord.Client({
-    disableEveryone: true,
-    disabledEvents: ['TYPING_START']
-});
+const bot = new Discord.Client();
 
 bot.on("ready", () => {
     console.log(`Bot is online!\n${bot.users.size} users, in ${bot.guilds.size} servers connected.`);
@@ -141,30 +137,6 @@ bot.on("message", message => {
     let role2 = message.channel.guild.roles.find('name', 'Lv1Raid');
     message.channel.send(`A ${role1} Raid has been posted. ${role2}`);
   }
-});
-
-function evalCmd(message, code) {
-    if(message.author.id !== "335499682262286338") return;
-    try {
-        let evaled = eval(code);
-        if (typeof evaled !== "string")
-            evaled = util.inspect(evaled);
-            message.channel.send(clean(evaled), {code:"xl"});
-    } catch (err) {
-        message.channel.send(`\`ERROR\` \`\`\`xl\n${clean(err)}\n\`\`\``);
-    }
-}
-
-// Catch Errors before they crash the app.
-process.on('uncaughtException', (err) => {
-    const errorMsg = err.stack.replace(new RegExp(`${__dirname}/`, 'g'), './');
-    console.error('Uncaught Exception: ', errorMsg);
-    // process.exit(1); //Eh, should be fine, but maybe handle this?
-});
-
-process.on('unhandledRejection', err => {
-    console.error('Uncaught Promise Error: ', err);
-    // process.exit(1); //Eh, should be fine, but maybe handle this?
 });
 
 bot.login(process.env.BOT_TOKEN);
