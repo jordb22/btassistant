@@ -2,39 +2,38 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 bot.on("ready", () => {
-    bot.user.setGame('v0.0.9')
+  bot.user.setGame('v0.1.0');
     console.log(`Bot is online!\n${bot.users.size} users, in ${bot.guilds.size} servers connected.`);
 });
 
 bot.on("message", message => {
   if(message.content.indexOf('Tier 5 Egg') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Mewtwo');
+    let role1 = message.channel.guild.roles.find('name', 'Lv5Raid');
     message.channel.send(`A ${role1} Egg has appeared nearby and will be hatching soon!`);
   }
   else if(message.content.indexOf('Tier 4 Egg') > -1) {
     let role1 = message.channel.guild.roles.find('name', 'Lv4Raid');
-    message.channel.send(`A Lv 4 Egg has appeared nearby ${role1}`);
+    message.channel.send(`A ${role1} Egg has appeared nearby and will be hatching soon!`);
   }
   else if(message.content.indexOf('Tier 3 Egg') > -1) {
     let role1 = message.channel.guild.roles.find('name', 'Lv3Raid');
-    message.channel.send(`A Lv 3 Egg has appeared nearby ${role1}`);
+    message.channel.send(`A ${role1} Egg has appeared nearby and will be hatching soon!`);
   }
   else if(message.content.indexOf('Tier 2 Egg') > -1) {
     let role1 = message.channel.guild.roles.find('name', 'Lv2Raid');
-    message.channel.send(`A Lv 2 Egg has appeared nearby ${role1}`);
+    message.channel.send(`A ${role1} Egg has appeared nearby and will be hatching soon!`);
   }
   else if(message.content.indexOf('Tier 1 Egg') > -1) {
     let role1 = message.channel.guild.roles.find('name', 'Lv1Raid');
-    message.channel.send(`A Lv 1 Egg has appeared nearby ${role1}`);
+    message.channel.send(`A ${role1} Egg has appeared nearby and will be hatching soon!`);
   }
 });
 
 bot.on("message", message => {
   if(message.content.indexOf('Mewtwo') > -1) {
     let role1 = message.channel.guild.roles.find('name', 'Mewtwo');
-    let role2 = message.channel.guild.roles.find('name', 'Bristol');
-    let role3 = message.channel.guild.roles.find('name', 'Terryville');
-    message.channel.send(`A ${role1} Raid has been posted. ${role2} ${role3}`);
+    let role2 = message.channel.guild.roles.find('name', 'Lv5Raid');
+    message.channel.send(`A ${role1} Raid has been posted. ${role2}`);
   }
 });
 
