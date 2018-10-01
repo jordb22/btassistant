@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 bot.on("ready", () => {
-  bot.user.setActivity('v0.1.3');
     console.log(`Bot is online!\n${bot.users.size} users, in ${bot.guilds.size} servers connected.`);
 });
 
