@@ -93,14 +93,14 @@ bot.on("message", message => {
     message.channel.send(`A ${role2} Raid has been posted.`);
   }
   else if(message.content.indexOf('Kirlia') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Kirlia');
+    let role4 = message.channel.guild.roles.find('name', 'Kirlia');
     let role2 = message.channel.guild.roles.find('name', 'Lv2Raid');
-    message.channel.send(`A ${role1} Raid has been posted. ${role2}`);
+    message.channel.send(`A ${role4} Raid has been posted. ${role2}`);
   }
   else if(message.content.indexOf('Mawile') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Magmar');
+    let role3 = message.channel.guild.roles.find('name', 'Mawile');
     let role2 = message.channel.guild.roles.find('name', 'Lv2Raid');
-    message.channel.send(`A ${role1} Raid has been posted. ${role2}`);
+    message.channel.send(`A ${role3} Raid has been posted. ${role2}`);
   }
 });
 
