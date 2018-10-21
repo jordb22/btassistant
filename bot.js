@@ -50,7 +50,7 @@ bot.on("message", message => {
   else if(message.content.indexOf('Aggron') > -1) {
     let role1 = message.channel.guild.roles.find('name', 'Aggron');
     let role2 = message.channel.guild.roles.find('name', 'Lv4Raid');
-    message.channel.send(`A ${role1} Raid has been posted. ${role2}`);
+    message.channel.send(`An ${role1} Raid has been posted. ${role2}`);
   }
   else if(message.content.indexOf('Marowak') > -1) {
     let role1 = message.channel.guild.roles.find('name', 'Marowak');
@@ -125,7 +125,7 @@ bot.on("message", message => {
   else if(message.content.indexOf('Shinx') > -1) {
     let role1 = message.channel.guild.roles.find('name', 'Shinx');
     let role2 = message.channel.guild.roles.find('name', 'Lv1Raid');
-    message.channel.send(`A ${role1} has been posted. ${role2}`);
+    message.channel.send(`Holy ${role1}! A Raid has been posted! ${role2}`);
   }
 });
 
