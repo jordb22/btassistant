@@ -34,6 +34,11 @@ bot.on("message", message => {
     let role2 = message.channel.guild.roles.find('name', 'Lv5Raid');
     message.channel.send(`A ${role1} Raid has been posted. ${role2}`);
   }
+  if(message.content.indexOf('Giratina') > -1) {
+    let role1 = message.channel.guild.roles.find('name', 'Giratina');
+    let role2 = message.channel.guild.roles.find('name', 'Lv5Raid');
+    message.channel.send(`A ${role1} Raid has been posted. ${role2}`);
+  }
 });
 
 bot.on("message", message => {
