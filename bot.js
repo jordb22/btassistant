@@ -30,7 +30,6 @@ bot.on("message", message => {
 
 bot.on("message", message => {
   if(message.content.indexOf('Giratina') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Giratina');
     let role2 = message.channel.guild.roles.find('name', 'Lv5Raid');
     message.channel.send(`The Renegade Pokemon has appeared! ${role2}`);
   }
@@ -48,9 +47,8 @@ bot.on("message", message => {
     message.channel.send(`A ${role1} Raid has been posted. ${role2}`);
   }
   else if(message.content.indexOf('Houndoom') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Aggron');
     let role2 = message.channel.guild.roles.find('name', 'Lv4Raid');
-    message.channel.send(`A ${role1} Raid has been posted. ${role2}`);
+    message.channel.send(`A ${role2} Raid has been posted.`);
   }
   else if(message.content.indexOf('Marowak') > -1) {
     let role1 = message.channel.guild.roles.find('name', 'Marowak');
