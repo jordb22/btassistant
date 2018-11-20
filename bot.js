@@ -24,14 +24,14 @@ bot.on("message", message => {
   }
   else if(message.content.indexOf('Tier 1 Egg') > -1) {
     let role1 = message.channel.guild.roles.find('name', 'Lv1Raid');
-    message.channel.send(`Gen 4 Sighting! A ${role1} Egg was just posted!`);
+    message.channel.send(`A ${role1} Egg was just posted!`);
   }
 });
 
 bot.on("message", message => {
-  if(message.content.indexOf('Giratina') > -1) {
+  if(message.content.indexOf('Cresselia') > -1) {
     let role1 = message.channel.guild.roles.find('name', 'Lv5Raid');
-    message.channel.send(`The Renegade Pokemon has appeared! ${role1}`);
+    message.channel.send(`The Lunar Pokemon has appeared! ${role1}`);
   }
 });
 
