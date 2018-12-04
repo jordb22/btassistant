@@ -126,6 +126,18 @@ bot.on("message", message => {
     let role1 = message.channel.guild.roles.find('name', 'EX Gym');
     message.channel.send(`A Raid is taking place at an ${role1} soon.`);
   }
+  else if(message.content.indexOf('Plainville Fire') > -1) {
+    let role1 = message.channel.guild.roles.find('name', 'NortonEX');
+    message.channel.send(`A Raid at Norton Park has appeared! ${role1}`);
+  }
+  else if(message.content.indexOf('Farmington Canal') > -1) {
+    let role1 = message.channel.guild.roles.find('name', 'NortonEX');
+    message.channel.send(`A Raid at Norton Park has appeared! ${role1}`);
+  }
+  else if(message.content.indexOf('41.658491') > -1) {
+    let role1 = message.channel.guild.roles.find('name', 'NortonEX');
+    message.channel.send(`A Raid at Norton Park has appeared! ${role1}`);
+  }
 });
 
 bot.login(process.env.BOT_TOKEN);
