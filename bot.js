@@ -37,20 +37,18 @@ bot.on("message", message => {
 
 bot.on("message", message => {
   if(message.content.indexOf('Absol') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Absol');
     let role2 = message.channel.guild.roles.find('name', 'Lv4Raid');
-    message.channel.send(`An ${role1} Raid has been posted. ${role2}`);
+    message.channel.send(`A ${role2} Raid has been posted.`);
   }
-  else if(message.content.indexOf('Exeggutor') > -1) {
+  else if(message.content.indexOf('Houndoom') > -1) {
     let role2 = message.channel.guild.roles.find('name', 'Lv4Raid');
     message.channel.send(`A ${role2} Raid has been posted.`);
   }
   else if(message.content.indexOf('Marowak') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Marowak');
     let role2 = message.channel.guild.roles.find('name', 'Lv4Raid');
-    message.channel.send(`An Alolan ${role1} Raid has been posted. ${role2}`);
+    message.channel.send(`A ${role2} Raid has been posted.`);
   }
-  else if(message.content.indexOf('Aggron') > -1) {
+  else if(message.content.indexOf('Tyranitar') > -1) {
     let role2 = message.channel.guild.roles.find('name', 'Lv4Raid');
     message.channel.send(`A ${role2} Raid has been posted.`);
   }
@@ -58,11 +56,10 @@ bot.on("message", message => {
 
 bot.on("message", message => {
   if(message.content.indexOf('Raichu') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Raichu');
     let role2 = message.channel.guild.roles.find('name', 'Lv3Raid');
-    message.channel.send(`An Alolan ${role1} Raid has been posted.${role2}`);
+    message.channel.send(`A ${role2} Raid has been posted.`);
   }
-  else if(message.content.indexOf('Jolteon') > -1) {
+  else if(message.content.indexOf('Machamp') > -1) {
     let role2 = message.channel.guild.roles.find('name', 'Lv3Raid');
     message.channel.send(`A ${role2} Raid has been posted.`);
   }
@@ -70,50 +67,63 @@ bot.on("message", message => {
     let role2 = message.channel.guild.roles.find('name', 'Lv3Raid');
     message.channel.send(`A ${role2} Raid has been posted.`);
   }
-  else if(message.content.indexOf('Skarmory') > -1) {
+  else if(message.content.indexOf('Gengar') > -1) {
+    let role2 = message.channel.guild.roles.find('name', 'Lv3Raid');
+    message.channel.send(`A ${role2} Raid has been posted.`);
+  }
+  else if(message.content.indexOf('Pinsir') > -1) {
+    let role2 = message.channel.guild.roles.find('name', 'Lv3Raid');
+    message.channel.send(`A ${role2} Raid has been posted.`);
+  }
+  else if(message.content.indexOf('Sharpedo') > -1) {
     let role2 = message.channel.guild.roles.find('name', 'Lv3Raid');
     message.channel.send(`A ${role2} Raid has been posted.`);
   }
 });
 
 bot.on("message", message => {
-  if(message.content.indexOf('Electabuzz') > -1) {
+  if(message.content.indexOf('Misdreavus') > -1) {
     let role2 = message.channel.guild.roles.find('name', 'Lv2Raid');
     message.channel.send(`A ${role2} Raid has been posted.`);
   }
-  else if(message.content.indexOf('Lanturn') > -1) {
+  else if(message.content.indexOf('Sneasel') > -1) {
     let role2 = message.channel.guild.roles.find('name', 'Lv2Raid');
     message.channel.send(`A ${role2} Raid has been posted.`);
   }
-  else if(message.content.indexOf('Manectric') > -1) {
+  else if(message.content.indexOf('Sableye') > -1) {
     let role2 = message.channel.guild.roles.find('name', 'Lv2Raid');
     message.channel.send(`A ${role2} Raid has been posted.`);
   }
   else if(message.content.indexOf('Mawile') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Mawile');
     let role2 = message.channel.guild.roles.find('name', 'Lv2Raid');
-    message.channel.send(`A ${role1} Raid has been posted. ${role2}`);
+    message.channel.send(`A ${role2} Raid has been posted.`);
   }
 });
 
 bot.on("message", message => {
-  if(message.content.indexOf('Mareep') > -1) {
+  if(message.content.indexOf('Shuppet') > -1) {
     let role1 = message.channel.guild.roles.find('name', 'Lv1Raid');
     message.channel.send(`A ${role1} has been posted.`);
   }
-  else if(message.content.indexOf('Magnemite') > -1) {
+  else if(message.content.indexOf('Duskull') > -1) {
     let role1 = message.channel.guild.roles.find('name', 'Lv1Raid');
     message.channel.send(`A ${role1} has been posted.`);
   }
   else if(message.content.indexOf('Shinx') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Shinx');
-    let role2 = message.channel.guild.roles.find('name', 'Lv1Raid');
-    message.channel.send(`Holy ${role1}! A Raid has been posted! ${role2}`);
+    let role1 = message.channel.guild.roles.find('name', 'Lv1Raid');
+    message.channel.send(`A ${role1} has been posted.`);
   }
   else if(message.content.indexOf('Buizel') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Buizel');
-    let role2 = message.channel.guild.roles.find('name', 'Lv1Raid');
-    message.channel.send(`Woah! ${role1} is in a raid nearby! ${role2}`);
+    let role1 = message.channel.guild.roles.find('name', 'Lv1Raid');
+    message.channel.send(`A ${role1} has been posted.`);
+  }
+  else if(message.content.indexOf('Snorunt') > -1) {
+    let role1 = message.channel.guild.roles.find('name', 'Lv1Raid');
+    message.channel.send(`A ${role1} has been posted.`);
+  }
+  else if(message.content.indexOf('Drifloon') > -1) {
+    let role1 = message.channel.guild.roles.find('name', 'Lv1Raid');
+    message.channel.send(`A ${role1} has been posted.`);
   }
 });
 
