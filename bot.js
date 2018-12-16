@@ -96,25 +96,4 @@ bot.on("message", message => {
   }
 });
 
-bot.on("message", message => {
-  if(message.content.indexOf('Mareep') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Lv1Raid');
-    message.channel.send(`A ${role1} has been posted.`);
-  }
-  else if(message.content.indexOf('Magnemite') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Lv1Raid');
-    message.channel.send(`A ${role1} has been posted.`);
-  }
-  else if(message.content.indexOf('Shinx') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Shinx');
-    let role2 = message.channel.guild.roles.find('name', 'Lv1Raid');
-    message.channel.send(`Holy ${role1}! A Raid has been posted! ${role2}`);
-  }
-  else if(message.content.indexOf('Buizel') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Buizel');
-    let role2 = message.channel.guild.roles.find('name', 'Lv1Raid');
-    message.channel.send(`Woah! ${role1} is in a raid nearby! ${role2}`);
-  }
-});
-
 bot.login(process.env.BOT_TOKEN);
