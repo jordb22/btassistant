@@ -28,25 +28,4 @@ bot.on("message", message => {
   }
 });
 
-bot.on("message", message => {
-  if(message.content.indexOf('Absol') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Absol');
-    let role2 = message.channel.guild.roles.find('name', 'Lv4Raid');
-    message.channel.send(`An ${role1} Raid has been posted. ${role2}`);
-  }
-  else if(message.content.indexOf('Exeggutor') > -1) {
-    let role2 = message.channel.guild.roles.find('name', 'Lv4Raid');
-    message.channel.send(`A ${role2} Raid has been posted.`);
-  }
-  else if(message.content.indexOf('Marowak') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Marowak');
-    let role2 = message.channel.guild.roles.find('name', 'Lv4Raid');
-    message.channel.send(`An Alolan ${role1} Raid has been posted. ${role2}`);
-  }
-  else if(message.content.indexOf('Aggron') > -1) {
-    let role2 = message.channel.guild.roles.find('name', 'Lv4Raid');
-    message.channel.send(`A ${role2} Raid has been posted.`);
-  }
-});
-
 bot.login(process.env.BOT_TOKEN);
