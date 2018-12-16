@@ -6,7 +6,7 @@ bot.on("ready", () => {
 });
 
 bot.on("message", message => {
-  else if(message.content.indexOf('Go In') > -1) {
+  if(message.content.indexOf('Go In') > -1) {
     message.channel.send(`Raid discussions should take place in the private raid channels! Please find the channel using Active Raids.`);
   }
 });
