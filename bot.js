@@ -18,14 +18,6 @@ bot.on("message", message => {
     let role1 = message.channel.guild.roles.find('name', 'Lv3Raid');
     message.channel.send(`Heads up! A ${role1} Egg was just posted!`);
   }
-  else if(message.content.indexOf('Tier 2 Egg') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Lv2Raid');
-    message.channel.send(`Check it out! A ${role1} Egg was just posted!`);
-  }
-  else if(message.content.indexOf('Tier 1 Egg') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Lv1Raid');
-    message.channel.send(`Gen 4 Sighting! A ${role1} Egg was just posted!`);
-  }
 });
 
 bot.login(process.env.BOT_TOKEN);
