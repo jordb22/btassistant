@@ -6,17 +6,8 @@ bot.on("ready", () => {
 });
 
 bot.on("message", message => {
-  else if(message.content.indexOf('Plainville Fire') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'NortonEX');
-    message.channel.send(`A Raid at Norton Park has appeared! ${role1}`);
-  }
-  else if(message.content.indexOf('Farmington Canal') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'NortonEX');
-    message.channel.send(`A Raid at Norton Park has appeared! ${role1}`);
-  }
-  else if(message.content.indexOf('41.658491') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'NortonEX');
-    message.channel.send(`A Raid at Norton Park has appeared! ${role1}`);
+  else if(message.content.indexOf('Go In') > -1) {
+    message.channel.send(`Raid discussions should take place in the private raid channels! Please find the channel using Active Raids.`);
   }
 });
 
