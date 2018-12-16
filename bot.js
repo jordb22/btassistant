@@ -56,24 +56,4 @@ bot.on("message", message => {
   }
 });
 
-bot.on("message", message => {
-  if(message.content.indexOf('Raichu') > -1) {
-    let role1 = message.channel.guild.roles.find('name', 'Raichu');
-    let role2 = message.channel.guild.roles.find('name', 'Lv3Raid');
-    message.channel.send(`An Alolan ${role1} Raid has been posted.${role2}`);
-  }
-  else if(message.content.indexOf('Jolteon') > -1) {
-    let role2 = message.channel.guild.roles.find('name', 'Lv3Raid');
-    message.channel.send(`A ${role2} Raid has been posted.`);
-  }
-  else if(message.content.indexOf('Scyther') > -1) {
-    let role2 = message.channel.guild.roles.find('name', 'Lv3Raid');
-    message.channel.send(`A ${role2} Raid has been posted.`);
-  }
-  else if(message.content.indexOf('Skarmory') > -1) {
-    let role2 = message.channel.guild.roles.find('name', 'Lv3Raid');
-    message.channel.send(`A ${role2} Raid has been posted.`);
-  }
-});
-
 bot.login(process.env.BOT_TOKEN);
