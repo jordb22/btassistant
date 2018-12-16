@@ -6,7 +6,7 @@ bot.on("ready", () => {
 });
 
 bot.on("message", message => {
-  if(message.content.indexOf('go in') > -1) {
+  if(message.content.toLowerCase().indexOf('go in') > -1) {
     message.channel.send(`Hey! Use The Raid Channel`);
   }
 });
