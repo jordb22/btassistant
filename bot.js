@@ -35,12 +35,7 @@ bot.on("message", message => {
   if(message.content.toLowerCase().indexOf('pyre') > -1) {
     message.channel.send({embed: {
       color: 3447003,
-      author: {
-      name: bot.user.username,
-      icon_url: bot.user.avatar
-      },
       title: "This is an embed",
-      url: "http://google.com",
       description: "This is a test embed to showcase what they look like and what they can do.",
       fields: [{
         name: "Fields",
@@ -55,11 +50,6 @@ bot.on("message", message => {
         value: "You can put all the *usual* **__Markdown__** inside of them."
       }
       ],
-      timestamp: new Date(),
-      footer: {
-      icon_url: bot.user.avatar,
-      text: "© Example"
-    }
     }})
   }
 });
