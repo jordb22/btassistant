@@ -9,8 +9,9 @@ bot.on("message", message => {
   if(message.content.toLowerCase().indexOf('go in') > -1) {
     message.channel.send(`General Chat is not the place. Please use the private raid room.`);
   }
-  else if(message.content.toLowerCase().indexOf('nest list') > -1) {
-    message.channel.send(`Please visit #bt-go-updates for information on the current nests!`);
+  else if(message.content.toLowerCase().indexOf('lists') > -1) {
+    message.delete();
+    message.channel.send(`Please visit #bt-updates for information on the current nests!`);
   }
 });
 
