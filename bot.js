@@ -22,6 +22,10 @@ bot.on("message", message => {
     message.delete();
     message.channel.send(`Those Sableye are always playing tricks around here! Watch out!`);
   }
+  else if(message.content.toLowerCase().indexOf('bot triggers') > -1) {
+    message.delete();
+    message.channel.send(`I respond to ~go in~ ~nest list~ ~spoofing~ and ~spoof~ at this time.`);
+  }
 });
 
 bot.login(process.env.BOT_TOKEN);
