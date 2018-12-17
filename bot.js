@@ -13,7 +13,8 @@ bot.on("message", message => {
   }
   else if(message.content.toLowerCase().indexOf('nest list') > -1) {
     message.delete();
-    let message = `Make sure to check the current nest list at ${message.guild.channels.get('499423607999430656').toString()}`;
+    let room1 = message.channel.guild.channels.find('id', '499423607999430656');
+    message.channel.send(`Please visit ${room1} for information on the current nests!`);
   }
   else if(message.content.toLowerCase().indexOf('spoofing') > -1) {
     message.delete();
