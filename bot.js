@@ -10,7 +10,7 @@ bot.on("message", message => {
     message.delete();
     message.channel.send(`General Chat is not the place. Please use the private raid room.`);
   }
-  else if(message.content.toLowerCase() === 'nest list') {
+  else if(message.content.toLowerCase().indexOf('nest list') > -1) {
     message.delete();
     message.channel.send(`Please visit #bt-updates for information on the current nests!`);
   }
@@ -18,7 +18,7 @@ bot.on("message", message => {
     message.delete();
     message.channel.send(`I've heard special Trainers in the Hoenn Region fly on the backs of Latios and Latias in order to travel!`);
   }
-  else if(message.content.toLowerCase().indexOf('spoofing') > -1) {
+  else if(message.content.toLowerCase().indexOf('spoof') > -1) {
     message.delete();
     message.channel.send(`Those Sableye are always playing tricks around here! Watch out!`);
   }
