@@ -36,8 +36,8 @@ bot.on("message", message => {
     message.channel.send({embed: {
       color: 3447003,
       author: {
-      name: client.user.username,
-      icon_url: client.user.avatarURL
+      name: bot.user.username,
+      icon_url: bot.user.avatar
       },
       title: "This is an embed",
       url: "http://google.com",
@@ -57,7 +57,7 @@ bot.on("message", message => {
       ],
       timestamp: new Date(),
       footer: {
-      icon_url: client.user.avatarURL,
+      icon_url: bot.user.avatar,
       text: "© Example"
     }
     }})
