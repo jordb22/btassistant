@@ -9,7 +9,8 @@ bot.on("message", message => {
   if (message.author.bot) return;
   if(message.content.toLowerCase().indexOf('go in') > -1) {
     message.delete();
-    message.channel.send(`General Chat is not the place. Please use the private raid room.`);
+    let room1 = message.channel.guild.channels.find('id', '489200455658897408');
+    message.channel.send(`Please use the private raid room. Visit ${room1} to find the room you need.`);
   }
   else if(message.content.toLowerCase().indexOf('nest list') > -1) {
     message.delete();
@@ -27,6 +28,36 @@ bot.on("message", message => {
   else if(message.content.toLowerCase().indexOf('bot triggers') > -1) {
     message.delete();
     message.channel.send(`I respond to ~go in~ ~nest list~ ~spoofing~ and ~spoof~ at this time.`);
+  }
+  else if(message.content.toLowerCase().indexOf('Pyre Badge') > -1) {
+    message.delete();
+    message.channel.send({embed: {
+    color: 3447003,
+    author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+    title: "This is an embed",
+    url: "http://google.com",
+    description: "This is a test embed to showcase what they look like and what they can do.",
+    fields: [{
+        name: "Fields",
+        value: "They can have different fields with small headlines."
+      },
+      {
+        name: "Masked links",
+        value: "You can put [masked links](http://google.com) inside of rich embeds."
+      },
+      {
+        name: "Markdown",
+        value: "You can put all the *usual* **__Markdown__** inside of them."
+      }
+    ],
+    timestamp: new Date(),
+    footer: {
+      icon_url: client.user.avatarURL,
+      text: "© Example"
+    }
   }
 });
 
