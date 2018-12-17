@@ -29,13 +29,15 @@ bot.on("message", message => {
     message.delete();
     message.channel.send(`I respond to ~go in~ ~nest list~ ~spoofing~ and ~spoof~ at this time.`);
   }
-  else if(message.content.toLowerCase().indexOf('Pyre Badge') > -1) {
-    message.delete();
+});
+
+bot.on("message", message => {
+  if(message.content.toLowerCase().indexOf('Pyre Badge') > -1) {
     message.channel.send({embed: {
     color: 3447003,
     author: {
-      name: client.user.username,
-      icon_url: client.user.avatarURL
+      name: bot.user.username,
+      icon_url: bot.user.avatarURL
     },
     title: "This is an embed",
     url: "http://google.com",
@@ -55,7 +57,7 @@ bot.on("message", message => {
     ],
     timestamp: new Date(),
     footer: {
-      icon_url: client.user.avatarURL,
+      icon_url: bot.user.avatarURL,
       text: "© Example"
     }
   }
