@@ -34,8 +34,8 @@ bot.on("message", message => {
 bot.on("message", message => {
   if(message.content.toLowerCase().indexOf('pyre') > -1) {
     message.channel.send({embed: {
-      color: 3447003,
-      title: "This is an embed",
+      color: 10038562,
+      title: "Pyre Badge - Information",
       description: "This is a test embed to showcase what they look like and what they can do.",
       fields: [{
         name: "Fields",
@@ -45,10 +45,22 @@ bot.on("message", message => {
         name: "Masked links",
         value: "You can put [masked links](http://google.com) inside of rich embeds."
       },
+      ],
+    }})
+  }
+  else if(message.content.toLowerCase().indexOf('essence') > -1) {
+    message.channel.send({embed: {
+      color: 3066993,
+      title: "Essence Badge - Information",
+      description: "This is a test embed to showcase what they look like and what they can do.",
+      fields: [{
+        name: "Fields",
+        value: "They can have different fields with small headlines."
+      },
       {
-        name: "Markdown",
-        value: "You can put all the *usual* **__Markdown__** inside of them."
-      }
+        name: "Masked links",
+        value: "You can put [masked links](http://google.com) inside of rich embeds."
+      },
       ],
     }})
   }
