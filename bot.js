@@ -32,7 +32,7 @@ bot.on("message", message => {
 });
 
 bot.on("message", message => {
-  if(message.content.toLowerCase().indexOf('Pyre Badge') > -1) {
+  if(message.content.toLowerCase().indexOf('pyre') > -1) {
     message.channel.send({embed: {
       color: 10038562,
       title: "Pyre Badge - Information",
