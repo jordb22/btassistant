@@ -31,4 +31,13 @@ bot.on("message", message => {
   }
 });
 
+bot.on("message", message => {
+  if(message.content.toLowerCase().indexOf('pyre') > -1) {
+    message.channel.send({embed: {
+      color: 3447003,
+      description: "A very simple Embed!"
+    });
+  }
+});
+
 bot.login(process.env.BOT_TOKEN);
