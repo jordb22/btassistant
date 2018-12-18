@@ -38,7 +38,7 @@ bot.on("message", message => {
       title: "Quarry Badge - Information",
       description: "Earn the Quarry Badge by defeating the Rock/Ground Frontier Brain in their Frontier Challenge!",
       thumbnail: {
-        url: "https://images-ext-1.discordapp.net/external/Xg9G20OWNyRz-3mNjN3lzRZCfLQu0huQr8nZqjNokDU/https/assets.pokenavbot.com/images/badge/cad72a8e2dc0bbafc03638a3a01ceb449c8ced4cd10f92ce49d010c8.png"
+        url: "https://images-ext-2.discordapp.net/external/4ceJO0D4P-e9zIFHIwRH5dw9eHi0D7jRZtGX5e8mheg/https/assets.pokenavbot.com/images/badge/3c7f4afc9f8513e2c34b32b2be25ab58f9dac83f2d256d2d9888c753.png"
       },
       fields: [{
         name: "Current Frontier Brain",
@@ -62,13 +62,22 @@ bot.on("message", message => {
       color: 3066993,
       title: "Essence Badge - Information",
       description: "Earn the Essence Badge by defeating the Grass/Bug Frontier Brain in their Frontier Challenge!",
+      thumbnail: {
+        url: "https://images-ext-2.discordapp.net/external/vFPQf9F7cD8zuavwXidxsxRH3yaPkNJ2EJgME8TMMv8/https/assets.pokenavbot.com/images/badge/0bafbf71fcd4b3f8da871fccfb15478cd81632fe2f59d34ba3079b38.png"
+      },
       fields: [{
         name: "Current Frontier Brain",
-        value: "Jordon | @Jordon"
+        value: "Jordon | @Jordon",
+        inline: true
+      },
+      {
+        name: "PVP League",
+        value: "Great",
+        inline: true
       },
       {
         name: "Frontier Challenge",
-        value: "Great League Match | No Fire Type Pokemon or Moves Allowed!"
+        value: "No Fire Type Pokemon or Moves Allowed!"
       },
       ],
     }})
@@ -126,6 +135,9 @@ bot.on("message", message => {
       color: 9807270,
       title: "Nightmare Badge - Information",
       description: "Earn the Nightmare Badge by defeating the Dark/Fighting Frontier Brain in their Frontier Challenge!",
+      thumbnail: {
+        url: "https://images-ext-1.discordapp.net/external/Xg9G20OWNyRz-3mNjN3lzRZCfLQu0huQr8nZqjNokDU/https/assets.pokenavbot.com/images/badge/cad72a8e2dc0bbafc03638a3a01ceb449c8ced4cd10f92ce49d010c8.png"
+      },
       fields: [{
         name: "Current Frontier Brain",
         value: "Joe | @Rogue"
