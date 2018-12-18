@@ -75,7 +75,7 @@ bot.on("message", message => {
       },
       {
         name: "Frontier Challenge",
-        value: "Great League Match | To Be Announced."
+        value: "Great League Match | No Stage 2 Pokemon Allowed!"
       },
       ],
     }})
@@ -91,7 +91,7 @@ bot.on("message", message => {
       },
       {
         name: "Frontier Challenge",
-        value: "Ultra League Match | To Be Announced."
+        value: "Ultra League Match | No Evolved Pokemon Allowed!"
       },
       ],
     }})
@@ -123,7 +123,7 @@ bot.on("message", message => {
       },
       {
         name: "Frontier Challenge",
-        value: "Ultra League Match | To Be Announced."
+        value: "Ultra League Match | No Fighting Type Pokemon."
       },
       ],
     }})
@@ -155,7 +155,7 @@ bot.on("message", message => {
       },
       {
         name: "Frontier Challenge",
-        value: "Master League Match | To Be Announced."
+        value: "Master League Match | No Legendary Pokemon Allowed!"
       },
       ],
     }})
