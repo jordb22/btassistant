@@ -37,13 +37,22 @@ bot.on("message", message => {
       color: 12745742,
       title: "Quarry Badge - Information",
       description: "Earn the Quarry Badge by defeating the Rock/Ground Frontier Brain in their Frontier Challenge!",
+      thumbnail: {
+        url: "https://images-ext-1.discordapp.net/external/Xg9G20OWNyRz-3mNjN3lzRZCfLQu0huQr8nZqjNokDU/https/assets.pokenavbot.com/images/badge/cad72a8e2dc0bbafc03638a3a01ceb449c8ced4cd10f92ce49d010c8.png"
+      },
       fields: [{
         name: "Current Frontier Brain",
-        value: "George | @Yorgie18"
+        value: "George | @Yorgie18",
+        inline: true
+      },
+      {
+        name: "PVP League",
+        value: "Great",
+        inline: true
       },
       {
         name: "Frontier Challenge",
-        value: "Great League Match | To Be Announced."
+        value: "No Starter Family Pokemon Allowed!",
       },
       ],
     }})
