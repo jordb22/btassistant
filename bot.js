@@ -62,6 +62,9 @@ bot.on("message", message => {
       color: 15844367,
       title: "Dynamic Badge - Information",
       description: "Earn the Dynamic Badge by defeating the Electric/Steel Frontier Brain in their Frontier Challenge!",
+      thumbnail: {
+        url: "https://images-ext-1.discordapp.net/external/sDKRj0LI1vXwNY9tNXR8BPoQnksoy3g7TSUj-SoF0po/https/assets.pokenavbot.com/images/badge/c5323285c3134cc52fb7c560193dc16c49844d0afbe4a2b832963268.png"
+      },
       fields: [{
         name: "Current Frontier Brain",
         value: "John | @John&Bekka",
@@ -84,6 +87,9 @@ bot.on("message", message => {
       color: 7419530,
       title: "Revenant Badge - Information",
       description: "Earn the Revenant Badge by defeating the Ghost/Poison Frontier Brain in their Frontier Challenge!",
+      thumbnail: {
+        url: "https://images-ext-1.discordapp.net/external/EINV0BIFPcLyHf0ZmC3ffzhFNGJhyrVdipstxV_NTx8/https/assets.pokenavbot.com/images/badge/bb631f7aa5ed90066acf1798e41b5ae81c3fa3d747461abd84633384.png"
+      },
       fields: [{
         name: "Current Frontier Brain",
         value: "Tyler | @SirTyler7",
@@ -106,6 +112,9 @@ bot.on("message", message => {
       color: 3447003,
       title: "Hail Badge - Information",
       description: "Earn the Hail Badge by defeating the Water/Ice Frontier Brain in their Frontier Challenge!",
+      thumbnail: {
+        url: "https://images-ext-1.discordapp.net/external/gcsIDN4gIYUV_kTUOh5MPy5_lrPMnU3gaaqe5q4wfCw/https/assets.pokenavbot.com/images/badge/aa10fd864a5b2d2847fd2cc22bd46df118ba3e51aec1b2031a7d3479.png"
+      },
       fields: [{
         name: "Current Frontier Brain",
         value: "Easton | @Festive 002",
@@ -153,6 +162,9 @@ bot.on("message", message => {
       color: 10038562,
       title: "Pyre Badge - Information",
       description: "Earn the Pyre Badge by defeating the Fire/Normal Frontier Brain in their Frontier Challenge!",
+      thumbnail: {
+        url: "https://images-ext-2.discordapp.net/external/Fa-3xR8PGpfaYsmltUCT7om0FAl40_z6OGAm_wSS7Oc/https/assets.pokenavbot.com/images/badge/56182e1030d64d2cb77273a2243343c1aaa667b3d26143b052545636.png"
+      },
       fields: [{
         name: "Current Frontier Brain",
         value: "Jamie | @jojopride",
@@ -175,6 +187,9 @@ bot.on("message", message => {
       color: 1752220,
       title: "Aerial Badge - Information",
       description: "Earn the Aerial Badge by defeating the Dragon/Flying Frontier Brain in their Frontier Challenge!",
+      thumbnail: {
+        url: "https://images-ext-1.discordapp.net/external/M47BDt9FZ4AkfU9l4jpuHLHTzhJNvvKkUdbMWzGRono/https/assets.pokenavbot.com/images/badge/090774d207a1e9d521427c8fd5c56fbe75a322a2304d245e2ff7e0f8.png"
+      },
       fields: [{
         name: "Current Frontier Brain",
         value: "Roger | @RogerAK",
@@ -197,6 +212,9 @@ bot.on("message", message => {
       color: 10181046,
       title: "Fantasy Badge - Information",
       description: "Earn the Fantasy Badge by defeating the Psychic/Fairy Frontier Brain in their Frontier Challenge!",
+      thumbnail: {
+        url: "https://images-ext-1.discordapp.net/external/c-WrOi2jlacM73WqLn4ry17g8tb2OjchjdGlnWrysHY/https/assets.pokenavbot.com/images/badge/a9de549a3ffa48bea9405efa71e45dc8e9587adc62e5b166ff2c926f.png"
+      },
       fields: [{
         name: "Current Frontier Brain",
         value: "*???* | @Totalchaos71",
