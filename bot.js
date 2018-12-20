@@ -297,7 +297,7 @@ bot.on("message", message => {
       },
       {
         name: "Any Problems?",
-        value: "Please report any concerns to @Jordon"
+        value: "Please report any concerns to @Jordon, @JoJoPride, or @Rogue"
       }
       ],
     }})
