@@ -32,7 +32,8 @@ bot.on("message", message => {
 });
 
 bot.on("message", message => {
-   if(message.content.toLowerCase().indexOf('quarry') > -1) {
+   if(message.content.toLowerCase().indexOf('1288') > -1) {
+    message.delete();
     message.channel.send({embed: {
       color: 12745742,
       title: "Quarry Badge - Information",
@@ -57,7 +58,8 @@ bot.on("message", message => {
       ],
     }})
   }
-  else if(message.content.toLowerCase().indexOf('dynamic') > -1) {
+  else if(message.content.toLowerCase().indexOf('1290') > -1) {
+    message.delete();
     message.channel.send({embed: {
       color: 15844367,
       title: "Dynamic Badge - Information",
@@ -82,7 +84,8 @@ bot.on("message", message => {
       ],
     }})
   }
-  else if(message.content.toLowerCase().indexOf('revenant') > -1) {
+  else if(message.content.toLowerCase().indexOf('1291') > -1) {
+    message.delete();
     message.channel.send({embed: {
       color: 7419530,
       title: "Revenant Badge - Information",
@@ -107,7 +110,8 @@ bot.on("message", message => {
       ],
     }})
   }
-  else if(message.content.toLowerCase().indexOf('hail') > -1) {
+  else if(message.content.toLowerCase().indexOf('1292') > -1) {
+    message.delete();
     message.channel.send({embed: {
       color: 3447003,
       title: "Hail Badge - Information",
@@ -132,7 +136,8 @@ bot.on("message", message => {
       ],
     }})
   }
-  else if(message.content.toLowerCase().indexOf('nightmare') > -1) {
+  else if(message.content.toLowerCase().indexOf('1293') > -1) {
+    message.delete();
     message.channel.send({embed: {
       color: 9807270,
       title: "Nightmare Badge - Information",
@@ -157,7 +162,8 @@ bot.on("message", message => {
       ],
     }})
   }
-  else if(message.content.toLowerCase().indexOf('pyre') > -1) {
+  else if(message.content.toLowerCase().indexOf('1294') > -1) {
+    message.delete();
     message.channel.send({embed: {
       color: 10038562,
       title: "Pyre Badge - Information",
@@ -182,7 +188,8 @@ bot.on("message", message => {
       ],
     }})
   }
-  else if(message.content.toLowerCase().indexOf('aerial') > -1) {
+  else if(message.content.toLowerCase().indexOf('1295') > -1) {
+    message.delete();
     message.channel.send({embed: {
       color: 1752220,
       title: "Aerial Badge - Information",
@@ -207,7 +214,8 @@ bot.on("message", message => {
       ],
     }})
   }
-  else if(message.content.toLowerCase().indexOf('fantasy') > -1) {
+  else if(message.content.toLowerCase().indexOf('1296') > -1) {
+    message.delete();
     message.channel.send({embed: {
       color: 10181046,
       title: "Fantasy Badge - Information",
@@ -232,7 +240,8 @@ bot.on("message", message => {
       ],
     }})
   }
-  else if(message.content.toLowerCase().indexOf('essence') > -1) {
+  else if(message.content.toLowerCase().indexOf('1289') > -1) {
+    message.delete();
     message.channel.send({embed: {
       color: 3066993,
       title: "Essence Badge / Champion Medal",
@@ -257,6 +266,26 @@ bot.on("message", message => {
       {
         name: "Prerequisite",
         value: "Trainers must have earned all 8 of the other Frontier Badges!"
+      },
+      ],
+    }})
+  }
+  else if(message.content.toLowerCase().indexOf('frontier') > -1) {
+    message.delete();
+    message.channel.send({embed: {
+      color: 2899536,
+      title: "Bristol/Terryville Frontier League",
+      description: "Become the Frontier Champ by defeating each of the **10** Frontier Brain's Challenges!",
+      thumbnail: {
+        url: "https://cdn.bulbagarden.net/upload/f/f0/EmeraldBFLogo.png"
+      },
+      fields: [{
+        name: "Badge Challenges",
+        value: "In order to earn each Frontier Bagde you must defeat the Frontier Brain following the specific challenge they have created.",
+      },
+      {
+        name: "Battle Limits",
+        value: "Each Frontier Brain is volunteering their time. They each will determine when they are able to accept challengers. You can challenge each Frontier Brain once a day."
       },
       ],
     }})
