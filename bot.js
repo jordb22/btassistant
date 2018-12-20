@@ -281,11 +281,11 @@ bot.on("message", message => {
       },
       fields: [{
         name: "Badge Challenges",
-        value: "In order to earn each Frontier Bagde you must defeat the Frontier Brain following the specific challenge they have created.",
+        value: "In order to earn each Frontier Badge, you must defeat the Frontier Brain following the specific challenge they have created.",
       },
       {
         name: "Battle Limits",
-        value: "Each Frontier Brain is volunteering their time. They each will determine when they are able to accept challengers. You can challenge each Frontier Brain once a day."
+        value: "Each Frontier Brain determines their availability to accept challenges. Out of respect for their time, you can only challenge each Frontier Brain **once** a day if they're available. On occasion, they might accept an immediate rematch but it is not guaranteed."
       },
       ],
     }})
