@@ -270,23 +270,35 @@ bot.on("message", message => {
       ],
     }})
   }
-  else if(message.content.toLowerCase().indexOf('frontier') > -1) {
+  else if(message.content.toLowerCase().indexOf('frontierinfo') > -1) {
     message.delete();
     message.channel.send({embed: {
       color: 2899536,
       title: "Bristol/Terryville Frontier League",
       description: "Become the Frontier Champ by defeating each of the **10** Frontier Brain's Challenges!",
       thumbnail: {
-        url: "https://cdn.bulbagarden.net/upload/f/f0/EmeraldBFLogo.png"
+        url: "https://images-ext-1.discordapp.net/external/vlE6y0Wp9sicSNh5blH60Gju4xvDVy3wSQutS1ROgCQ/https/assets.pokenavbot.com/images/badge/74bb479a0130d1aeaaaa8bb36d28daf6b15922ffcebcb54c836e9879.png"
       },
       fields: [{
         name: "Badge Challenges",
         value: "In order to earn each Frontier Badge, you must defeat the Frontier Brain following the specific challenge they have created.",
       },
       {
+        name: "Frontier Brain Expectations",
+        value: "Frontier Brains are only allowed to use Pokemon from their Specific Types. When battling for a Badge the specific Challenge must be followed."
+      },
+      {
+        name: "Challenger Expectations",
+        value: "All trainers are expected to behave in a respectful manner. Frontier Brains reserve the right to decline a challenge for those behaving inappropriately."
+      },
+      {
         name: "Battle Limits",
         value: "Each Frontier Brain determines their availability to accept challenges. Out of respect for their time, you can only challenge each Frontier Brain **once** a day if they're available. On occasion, they might accept an immediate rematch but it is not guaranteed."
       },
+      {
+        name: "Any Problems?",
+        value: "Please report any concerns to @Jordon"
+      }
       ],
     }})
   }
