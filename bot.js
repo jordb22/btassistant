@@ -57,17 +57,14 @@ bot.on("message", message => {
       ],
     }})
   }
-  else if(message.content.toLowerCase().indexOf('essence') > -1) {
+  else if(message.content.toLowerCase().indexOf('dynamic') > -1) {
     message.channel.send({embed: {
-      color: 3066993,
-      title: "Essence Badge - Information",
-      description: "Earn the Essence Badge by defeating the Grass/Bug Frontier Brain in their Frontier Challenge!",
-      thumbnail: {
-        url: "https://images-ext-2.discordapp.net/external/vFPQf9F7cD8zuavwXidxsxRH3yaPkNJ2EJgME8TMMv8/https/assets.pokenavbot.com/images/badge/0bafbf71fcd4b3f8da871fccfb15478cd81632fe2f59d34ba3079b38.png"
-      },
+      color: 15844367,
+      title: "Dynamic Badge - Information",
+      description: "Earn the Dynamic Badge by defeating the Electric/Steel Frontier Brain in their Frontier Challenge!",
       fields: [{
         name: "Current Frontier Brain",
-        value: "Jordon | @Jordon",
+        value: "John | @John&Bekka",
         inline: true
       },
       {
@@ -77,23 +74,7 @@ bot.on("message", message => {
       },
       {
         name: "Frontier Challenge",
-        value: "No Fire Type Pokemon or Moves Allowed!"
-      },
-      ],
-    }})
-  }
-  else if(message.content.toLowerCase().indexOf('dynamic') > -1) {
-    message.channel.send({embed: {
-      color: 15844367,
-      title: "Dynamic Badge - Information",
-      description: "Earn the Dynamic Badge by defeating the Electric/Steel Frontier Brain in their Frontier Challenge!",
-      fields: [{
-        name: "Current Frontier Brain",
-        value: "John | @John&Bekka"
-      },
-      {
-        name: "Frontier Challenge",
-        value: "Great League Match | No Stage 2 Pokemon Allowed!"
+        value: "No Stage 2 Pokemon Allowed!"
       },
       ],
     }})
@@ -105,11 +86,17 @@ bot.on("message", message => {
       description: "Earn the Revenant Badge by defeating the Ghost/Poison Frontier Brain in their Frontier Challenge!",
       fields: [{
         name: "Current Frontier Brain",
-        value: "Tyler | @SirTyler7"
+        value: "Tyler | @SirTyler7",
+        inline: true
+      },
+      {
+        name: "PVP League",
+        value: "Ultra",
+        inline: true
       },
       {
         name: "Frontier Challenge",
-        value: "Ultra League Match | No Evolved Pokemon Allowed!"
+        value: "No Evolved Pokemon Allowed!"
       },
       ],
     }})
@@ -121,11 +108,17 @@ bot.on("message", message => {
       description: "Earn the Hail Badge by defeating the Water/Ice Frontier Brain in their Frontier Challenge!",
       fields: [{
         name: "Current Frontier Brain",
-        value: "Easton | @Something Reinhardt"
+        value: "Easton | @Festive 002",
+        inline: true
+      },
+      {
+        name: "PVP League",
+        value: "Ultra",
+        inline: true
       },
       {
         name: "Frontier Challenge",
-        value: "Ultra League Match | To Be Announced."
+        value: "No Electric Type Moves."
       },
       ],
     }})
@@ -140,11 +133,17 @@ bot.on("message", message => {
       },
       fields: [{
         name: "Current Frontier Brain",
-        value: "Joe | @Rogue"
+        value: "Joe | @Rogue",
+        inline: true
+      },
+      {
+        name: "PVP League",
+        value: "Ultra",
+        inline: true
       },
       {
         name: "Frontier Challenge",
-        value: "Ultra League Match | No Fighting Type Pokemon."
+        value: "No Fighting Type Pokemon."
       },
       ],
     }})
@@ -156,11 +155,17 @@ bot.on("message", message => {
       description: "Earn the Pyre Badge by defeating the Fire/Normal Frontier Brain in their Frontier Challenge!",
       fields: [{
         name: "Current Frontier Brain",
-        value: "Jamie | @jojopride"
+        value: "Jamie | @jojopride",
+        inline: true
+      },
+      {
+        name: "PVP League",
+        value: "Master",
+        inline: true
       },
       {
         name: "Frontier Challenge",
-        value: "Master League Match | To Be Announced."
+        value: "Majority Red, Orange, Yellow Pokemon!"
       },
       ],
     }})
@@ -172,11 +177,17 @@ bot.on("message", message => {
       description: "Earn the Aerial Badge by defeating the Dragon/Flying Frontier Brain in their Frontier Challenge!",
       fields: [{
         name: "Current Frontier Brain",
-        value: "Roger | @RogerAK"
+        value: "Roger | @RogerAK",
+        inline: true
+      },
+      {
+        name: "PVP League",
+        value: "Master",
+        inline: true
       },
       {
         name: "Frontier Challenge",
-        value: "Master League Match | No Legendary Pokemon Allowed!"
+        value: "No Legendary Pokemon Allowed!"
       },
       ],
     }})
@@ -188,11 +199,46 @@ bot.on("message", message => {
       description: "Earn the Fantasy Badge by defeating the Psychic/Fairy Frontier Brain in their Frontier Challenge!",
       fields: [{
         name: "Current Frontier Brain",
-        value: "*???* | @Totalchaos71"
+        value: "*???* | @Totalchaos71",
+        inline: true
+      },
+      {
+        name: "PVP League",
+        value: "Master",
+        inline: true
       },
       {
         name: "Frontier Challenge",
-        value: "Master League Match | To Be Announced."
+        value: "No Dark Type Pokemon or Moves!"
+      },
+      ],
+    }})
+  }
+  else if(message.content.toLowerCase().indexOf('essence') > -1) {
+    message.channel.send({embed: {
+      color: 3066993,
+      title: "Essence Badge / Champion Medal",
+      description: "Earn the 9th Frontier Badge and recieve the Champion Badge by completing this challenge!",
+      thumbnail: {
+        url: "https://images-ext-2.discordapp.net/external/vFPQf9F7cD8zuavwXidxsxRH3yaPkNJ2EJgME8TMMv8/https/assets.pokenavbot.com/images/badge/0bafbf71fcd4b3f8da871fccfb15478cd81632fe2f59d34ba3079b38.png"
+      },
+      fields: [{
+        name: "Current Frontier Brain",
+        value: "David | @BigDaddyBubChub",
+        inline: true
+      },
+      {
+        name: "Current Frontier Brain",
+        value: "Jordon | @Jordon",
+        inline: true
+      },
+      {
+        name: "Final Frontier Challenge",
+        value: "Defeat both Brains in a Great League Match. No Fire or Flying Type Moves are allowed in either match!"
+      },
+      {
+        name: "Prerequisite",
+        value: "Trainers must have earned all 8 of the other Frontier Badges!"
       },
       ],
     }})
