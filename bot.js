@@ -52,7 +52,7 @@ bot.on("message", message => {
         value: "No Starter Family Pokemon Allowed!",
       },
       ],
-    }})
+    }});
   }
   else if(message.content.toLowerCase().indexOf('1290') > -1) {
     message.delete();
@@ -78,7 +78,7 @@ bot.on("message", message => {
         value: "No Stage 2 Pokemon Allowed!"
       },
       ],
-    }})
+    }});
   }
   else if(message.content.toLowerCase().indexOf('1291') > -1) {
     message.delete();
@@ -104,7 +104,7 @@ bot.on("message", message => {
         value: "No Evolved Pokemon Allowed!"
       },
       ],
-    }})
+    }});
   }
   else if(message.content.toLowerCase().indexOf('1292') > -1) {
     message.delete();
@@ -130,7 +130,7 @@ bot.on("message", message => {
         value: "No Electric Type Moves."
       },
       ],
-    }})
+    }});
   }
   else if(message.content.toLowerCase().indexOf('1293') > -1) {
     message.delete();
@@ -156,7 +156,7 @@ bot.on("message", message => {
         value: "No Fighting Type Pokemon."
       },
       ],
-    }})
+    }});
   }
   else if(message.content.toLowerCase().indexOf('1294') > -1) {
     message.delete();
@@ -182,7 +182,7 @@ bot.on("message", message => {
         value: "Majority Red, Orange, Yellow Pokemon!"
       },
       ],
-    }})
+    }});
   }
   else if(message.content.toLowerCase().indexOf('1295') > -1) {
     message.delete();
@@ -208,7 +208,7 @@ bot.on("message", message => {
         value: "No Legendary Pokemon Allowed!"
       },
       ],
-    }})
+    }});
   }
   else if(message.content.toLowerCase().indexOf('1296') > -1) {
     message.delete();
@@ -234,7 +234,7 @@ bot.on("message", message => {
         value: "No Dark Type Pokemon or Moves!"
       },
       ],
-    }})
+    }});
   }
   else if(message.content.toLowerCase().indexOf('1289') > -1) {
     message.delete();
@@ -264,7 +264,7 @@ bot.on("message", message => {
         value: "Trainers must have earned all 8 of the other Frontier Badges!"
       },
       ],
-    }})
+    }});
   }
   else if(message.content.toLowerCase().indexOf('frontierinfo') > -1) {
     message.delete();
@@ -296,7 +296,7 @@ bot.on("message", message => {
         value: "Please report any concerns to @Jordon, @JoJoPride, or @Rogue"
       }
       ],
-    }})
+    }});
   }
 });
 
