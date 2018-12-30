@@ -1,7 +1,7 @@
 {
   "name": "BT-Server Assistant",
   "description": "Test",
-  "version": "18.12.15",
+  "version": "18.12.30",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
