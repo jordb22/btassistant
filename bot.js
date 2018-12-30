@@ -7,7 +7,7 @@ bot.on("ready", () => {
 
 bot.on("message", message => {
   if (message.author.bot) return;
-  if(message.content.toLowerCase().indexOf(' go in ') > -1) {
+  if(message.content.toLowerCase().indexOf('go in') > -1) {
     message.delete();
     let room1 = message.channel.guild.channels.find('id', '489200455658897408');
     message.channel.send(`Please use the private raid room. Visit ${room1} to find the room you need.`);
