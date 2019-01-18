@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
