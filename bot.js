@@ -6,28 +6,6 @@ bot.on("ready", () => {
 });
 
 bot.on("message", message => {
-  if (message.author.bot) return;
-  if(message.content.toLowerCase().indexOf('go in') > -1) {
-    message.delete();
-    let room1 = message.channel.guild.channels.find('id', '489200455658897408');
-    message.channel.send(`Please use the private raid room. Visit ${room1} to find the room you need.`);
-  }
-  else if(message.content.toLowerCase().indexOf('nest list') > -1) {
-    message.delete();
-    let room1 = message.channel.guild.channels.find('id', '499423607999430656');
-    message.channel.send(`Please visit ${room1} for information on the current nests!`);
-  }
-  else if(message.content.toLowerCase().indexOf('spoofing') > -1) {
-    message.delete();
-    message.channel.send(`I've heard special Trainers in the Hoenn Region fly on the backs of Latios and Latias in order to travel!`);
-  }
-  else if(message.content.toLowerCase().indexOf('spoof') > -1) {
-    message.delete();
-    message.channel.send(`Those Sableye are always playing tricks around here! Watch out!`);
-  }
-});
-
-bot.on("message", message => {
    if(message.content.toLowerCase().indexOf('1288') > -1) {
     message.delete();
     message.channel.send({embed: {
